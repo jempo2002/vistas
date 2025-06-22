@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="menu_principal">Menú Principal</string>
+    <string name="asistencia">Asistencia</string>
+    <string name="actividades">Actividades</string>
+    <string name="valoracion">Valoración</string>
+    <string name="progreso">Progreso</string>
+    <string name="progreso_integral">Progreso Integral</string>
+    <string name="citaciones">Citaciones</string>
+    <string name="app_name">Vistassss</string>
 </resources>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo"
+    android:padding="16dp">
+
+    <!-- Header con flecha y título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Volver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="llamado de asistencia"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <!-- ScrollView para la lista de estudiantes -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Estudiante 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/fondo_estudiante"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <!-- Ícono de persona -->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_person"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Estudiante" />
+
+                <!-- Nombre del estudiante -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Juan Carlos Posada"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp" />
+
+                <!-- Íconos de estado -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Ícono check (presente) -->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_check"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_verde"
+                        android:padding="4dp"
+                        android:contentDescription="Presente" />
+
+                    <!-- Ícono X (ausente) -->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_close"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Ausente" />
+
+                    <!-- Ícono reloj (tardanza) -->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_alarm"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Tardanza" />
+
+                    <!-- Ícono editar -->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_edit"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Editar" />
+
+                    <!-- Botón más -->
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_add"
+                        android:background="@drawable/fondo_boton_mas"
+                        android:padding="6dp"
+                        android:contentDescription="Más opciones" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Estudiante 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/fondo_estudiante"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_person"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Estudiante" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Juan Carlos Posada"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_check"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_verde"
+                        android:padding="4dp"
+                        android:contentDescription="Presente" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_close"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Ausente" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_alarm"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Tardanza" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_edit"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Editar" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_add"
+                        android:background="@drawable/fondo_boton_mas"
+                        android:padding="6dp"
+                        android:contentDescription="Más opciones" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Estudiante 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/fondo_estudiante"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_person"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Estudiante" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Juan Carlos Posada"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_check"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_verde"
+                        android:padding="4dp"
+                        android:contentDescription="Presente" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_close"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Ausente" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_alarm"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Tardanza" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_edit"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/fondo_icono_negro"
+                        android:padding="4dp"
+                        android:contentDescription="Editar" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_add"
+                        android:background="@drawable/fondo_boton_mas"
+                        android:padding="6dp"
+                        android:contentDescription="Más opciones" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
